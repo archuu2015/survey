@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Thank You for filling this survey form</p>
+        </header>
+        <form class="form" id="survey-form">
+            <label id="name-label">Name</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label id="email-label">Email</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+            <label id="number-label">Age</label><br>
+            <input type="number" id="number" name="age" min="10" max="90" placeholder="Age"><br><br>
+            <label>Field you are interested in:</label><br>
+            <select id="dropdown" name="field" required>
+                <option disabled selected value>Select field</option>
+                <option value="mathematics">Mathematics</option>
+                <option value="agriculture">Agriculture</option>
+                <option value="itprogramming">IT Programming</option>
+                <option value="law">Law</option>
+                <option value="business">Business</option>
+                <option value="others">Others</option>
+            </select><br><br>
+            <label>Which option best describes your current role?</label><br>
+            <label>
+                <input id="input-radio" name="role" value="student" type="radio">Student</label><br>
+            <label>
+                <input id="input-radio" name="role" value="part-time-job" type="radio">Part-time Job</label><br>
+            <label>
+                <input id="input-radio" name="role" value="full-time-job" type="radio">Full-time Job</label><br>
+            <label>
+                <input id="input-radio" name="role" value="prefer-not-to-say" type="radio">Prefer not to say</label><br>
+            <label>
+                <input id="input-radio" name="role" value="other" type="radio">Other</label><br><br>
+            <label>Your Personal Qualities (Check all that apply)</label><br>
+            <label><input id="input-checkbox" name="prefer" value="fast-learner" type="checkbox">Fast learner</label><br>
+            <label><input id="input-checkbox" name="prefer" value="self-educated" type="checkbox">Self-educated</label><br>
+            <label><input id="input-checkbox" name="prefer" value="organized" type="checkbox">Organized</label><br>
+            <label><input id="input-checkbox" name="prefer" value="self-motivated" type="checkbox">Self motivated</label><br>
+            <label><input id="input-checkbox" name="prefer" value="creative" type="checkbox">Creative</label><br>
+            <label><input id="input-checkbox" name="prefer" value="decision-maker" type="checkbox">Decision maker</label><br><br>
+            <label>Any Comments?</label><br>
+            <textarea type="textarea" id="comments" name="comments"></textarea> <br><br><br>
+            <button class="submit-button" type="submit" id="submit">Submit</button>
+
+        </form>
+
+
+    </div>
+
+
+</body>
+
+</html>
